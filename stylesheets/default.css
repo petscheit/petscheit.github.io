@@ -88,7 +88,6 @@ section h2 {
 
 section p {
     position: absolute;
-    position: absolute;
     padding: 30px;
     margin: 75px 35% 0px 30px;
    }
@@ -104,6 +103,7 @@ footer {
     right:0px;
     height:50px;
     text-align: center;
+    color:white;
     }
 
 
