@@ -1,0 +1,25 @@
+.post1 {
+	position: absolute;
+	padding: 30px;
+    margin: 75px 35% 0px 30px;
+    background-color: #7689A9;
+    border-radius: 10px;	
+}
+
+.post1:hover, .post1:active {
+    background-color: #152C55;
+   }
+
+
+  .post2 {
+	position: absolute;
+	padding: 30px;
+    margin: 200px 35% 0px 30px;
+    background-color: #7689A9;
+    border-radius: 10px;
+	
+}
+
+.post2:hover, .post2:active {
+    background-color: #152C55;
+   }
