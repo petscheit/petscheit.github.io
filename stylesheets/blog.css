@@ -8,6 +8,7 @@
 
 .post1:hover, .post1:active {
     background-color: #152C55;
+    font-size: 1.1em;
    }
 
 
@@ -22,4 +23,26 @@
 
 .post2:hover, .post2:active {
     background-color: #152C55;
+    font-size: 1.1em;
    }
+
+
+.post3 {
+  position: absolute;
+  padding: 30px;
+    margin: 325px 35% 0px 30px;
+    background-color: #7689A9;
+    border-radius: 10px;  
+}
+
+.post3:hover, .post3:active {
+    background-color: #152C55;
+    font-size: 1.1em;
+   }
+
+
+.boxmodel {
+  margin-top: 20px;
+  margin-left: 45%;
+  border: 3px solid gray;
+}
