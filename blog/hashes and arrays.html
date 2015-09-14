@@ -55,12 +55,25 @@
 		<h2>Arrays and Hashes</h2>
 		<p>
       		So this week we've learned about arrays and hashes in Ruby. Both of them are methods of storing a set of information and making them easily accessible. While they basically do the same thing they use different approaches. An Array can be best described as a variable that can store a theoretical infinite number of elements. 
-      		Lets say we want an array called "TestArray". To create it we write "TestArray = Array.new". We now have an empty array that doesn't contain any data. Adding data is ver simple. Lets add all numbers from 1 - 10. We write "TestArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]". It's important to remember that all these values are stored seperatly and not as one line of text. We can show this while explaining how to access the data, it's very simple aswell. If we want our code to return the number "3" from our array we have to write "TestArray[2]". You see that the number 3 is the 3rd data entry in our array, so what you do is write the nme of the array (TestArray) and then the position of the data you want to display in the block-brackets. Now you might think that I made a typo and wrote "2" instead of "3". I didn't! Computers always start counting at 0 and not at 1. It's couter intuitive but you'll get used to it insanly fast. 
+      		Lets say we want an array called "TestArray". To create it we write "TestArray = Array.new". We now have an empty array that doesn't contain any data. Adding data is ver simple. Lets add all numbers from 1 - 10. We write 
+      		<br>
+      		TestArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 
+      		<br>
+      		<br>
+      		 It's important to remember that all these values are stored seperatly and not as one line of text. We can show this while explaining how to access the data, it's very simple aswell. If we want our code to return the number "3" from our array we have to write 
+      		 <br>
+      		 "TestArray[2]"
+      		 <br>
+      		 <br>
+      		  You see that the number 3 is the 3rd data entry in our array, so what you do is write the nme of the array (TestArray) and then the position of the data you want to display in the block-brackets. Now you might think that I made a typo and wrote "2" instead of "3". I didn't! Computers always start counting at 0 and not at 1. It's couter intuitive but you'll get used to it insanly fast. 
     <br>
     <br>
         The other method of storing data are hashes. While arrays use the position of each data element (first one starting at 0 and then increasing by one for each entry) hashes use what we call a key. You can imagine the key being the nickname of our data elements. When you call the hash and add the key/nickname ruby knows what data you want. 
         this is how a very simple hash looks:
+        <br>
         grades = { "Jane Doe" => 10, "Jim Doe" => 6 } 
+        <br>
+        <br>
         The name of the hash is grades. "Jane Doe" and "Jim Doe" are the keys in this hash and have a value assigned to them with the so called "hash rocket - =>". This is how you would call (access it's data) a hash: grades["Jane Doe"]. Hope you guessed it, ruby would return 10 when running this code.
 	</section>
 
