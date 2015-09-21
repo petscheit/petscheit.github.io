@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" sizes="57x57" href="./imgs/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./imgs/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./imgs/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./imgs/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./imgs/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./imgs/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./imgs/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./imgs/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="./imgs/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./imgs/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="./imgs/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="./imgs/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="./imgs/manifest.json">
+  <link rel="shortcut icon" href="./imgs/favicon.ico">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-TileImage" content="./imgs/mstile-144x144.png">
+  <meta name="msapplication-config" content="./imgs/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>_Paul Etscheit</title>
+</head>
+<body>
+
+	<header>
+
+		<h2><a href="../index.html">_Paul Etscheit</a></h2>
+		<nav>
+			<ul>
+				<li><a href="./projects/">Projects</a></li>
+				<li><a href="./about-me/">About me</a></li>
+				<li><a href="./blog-template.html">Blog</a></li>
+				<li><a href="./contact/">Contact</a></li>
+				<li><a href="./resume/">Resume</a></li>
+			</ul>    
+		</nav>
+	</header>
+
+
+	<article>
+		<h2>Enumerable#map</h2>
+		<p>
+      		In this post I'll be explaining the .map method. In order for this article to be easy to understand I'll compare it with the .each method and explain all the similarities and differences. Let's get started.
+      	</p>
+      	<p>
+      		Something important to know about the .map method is that it's also called ".collect". No idea why but it seems worth mentioning. So how is .map similar to .each? Well we use both of them to iterate over an array and at first sight they seem to do the same thing. Both of them iterate over every element of an array seperatly. Here and example:
+		</p>
+		<p> 
+			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">irb(main)<span style="color: #AA6600">:&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">].</span>each {<span style="color: #333333">|</span>x<span style="color: #333333">|</span> x<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">2</span>}
+			<span style="color: #333333">=&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">]</span>
+			</pre></div>
+
+
+		</p>
+		<p>
+             Ok so by default .each returns the original array. Let's take a look at what happens when we use .map!
+    	</p>
+    	<p>
+	        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">irb(main)<span style="color: #AA6600">:&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">].</span>collect {<span style="color: #333333">|</span>x<span style="color: #333333">|</span> x<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">2</span>}
+			<span style="color: #333333">=&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">6</span><span style="color: #333333">]</span>
+			</pre></div>
+
+
+        </p>
+        <p>
+	       Ahhhh. That's quite interesting and shows us the fundamental differences of these methods. .map reads the array, iterates through it and then returns the new array while .each returns the original one. So why is this important? As far as I have understood the only real benefit is less code which results in better readability and efficiency. I mean the difference of using one or the other is minimal at this stage but I guess these benefits become more important as we dig deeper in the coding world. Hope you understand what I'm trying to explain. Have a good day :)
+		</p>
+		
+	</article>
+
+	<footer>
+		<ul>
+			<li><a href="https://www.facebook.com/paul.etscheit"><img class="float" src="../imgs/fb-logo-white.png" alt="facebook-logo"></a></li>
+			<li><a href="https://www.twitter.com/cryptosnoop"><img class="float" src="../imgs/twitter-logo-white.png" alt="twitter-logo"></a></li>
+			<li><a href="https://linkedin.com/pub/paul-etscheit/103/959/aa6"><img class="float" src="../imgs/linkedin-logo-white.png" alt="linkedin-logo"></a></li>
+			<li><a href="https://www.github.com/petscheit"><img class="float" src="../imgs/github-logo-white.png" alt="github-logo"></a></li>
+		</ul>
+	</footer>
+
+
+</body>
+</html>

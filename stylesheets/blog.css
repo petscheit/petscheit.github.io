@@ -36,11 +36,16 @@ border-bottom: 1px solid gray;
 
 }
 
-#post5:hover .special5   {
+#post4:hover .special4   {
 	border-bottom: 1px solid grey;
 }
 
-#post4:hover .special4 {
-	border-bottom: 1px solid grey;
+#post5:hover .special5 {
+  border-bottom: 1px solid grey;
+
+}
+
+#post6:hover .special6 {
+  border-bottom: 1px solid grey;
 
 }
