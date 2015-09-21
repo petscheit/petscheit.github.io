@@ -1,48 +1,46 @@
-.post1 {
-	position: absolute;
-	padding: 30px;
-    margin: 75px 35% 0px 30px;
-    background-color: #7689A9;
-    border-radius: 10px;	
+section {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 5.5em;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 60px;
+
+
 }
 
-.post1:hover, .post1:active {
-    background-color: #152C55;
-    font-size: 1.1em;
-   }
+.post {
+  padding-top: 25px;
+  padding-bottom: 15px;
 
-
-  .post2 {
-	position: absolute;
-	padding: 30px;
-    margin: 200px 35% 0px 30px;
-    background-color: #7689A9;
-    border-radius: 10px;
-	
 }
 
-.post2:hover, .post2:active {
-    background-color: #152C55;
-    font-size: 1.1em;
-   }
-
-
-.post3 {
-  position: absolute;
-  padding: 30px;
-    margin: 325px 35% 0px 30px;
-    background-color: #7689A9;
-    border-radius: 10px;  
+.post a {
+  text-decoration: none;
+  font-size: 2em;
+  color: darkgray;
 }
 
-.post3:hover, .post3:active {
-    background-color: #152C55;
-    font-size: 1.1em;
-   }
+#post1:hover .special1 { 
+border-bottom: 1px solid gray;
 
+ }
 
-.boxmodel {
-  margin-top: 20px;
-  margin-left: 45%;
-  border: 3px solid gray;
+#post2:hover .special2 {
+	border-bottom: 1px solid grey;
+
+}
+
+#post3:hover .special3 {
+	border-bottom: 1px solid grey;
+
+}
+
+#post5:hover .special5   {
+	border-bottom: 1px solid grey;
+}
+
+#post4:hover .special4 {
+	border-bottom: 1px solid grey;
+
 }
