@@ -17,6 +17,7 @@ header h2 a {
     font-size: 2em;
     float: left;
     font-family: 'Raleway', sans-serif;
+
 }
 
 
@@ -38,7 +39,11 @@ li a {
 header li a:hover {
     color: gray;
 }
+article h2 {
+  padding-bottom: 25px;
 
+
+}
 article {
   margin-top:5em;
   padding-top: 2em;
@@ -53,6 +58,11 @@ article {
   margin-bottom: 70px;
   font-family: 'Raleway', sans-serif;
   line-height: 150%;
+
+}
+
+article p {
+  margin-bottom: 25px;
 
 }
 
