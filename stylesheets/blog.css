@@ -9,9 +9,7 @@ section {
 
 }
 
-.code_snippet {
-  text-align: left;
-}
+
 
 .post {
   padding-top: 25px;
@@ -50,6 +48,11 @@ border-bottom: 1px solid gray;
 }
 
 #post6:hover .special6 {
+  border-bottom: 1px solid grey;
+
+}
+
+#post7:hover .special7 {
   border-bottom: 1px solid grey;
 
 }
