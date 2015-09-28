@@ -9,6 +9,10 @@ section {
 
 }
 
+.code_snippet {
+  text-align: left;
+}
+
 .post {
   padding-top: 25px;
   padding-bottom: 15px;
