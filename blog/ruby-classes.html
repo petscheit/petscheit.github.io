@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" sizes="57x57" href="./imgs/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./imgs/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./imgs/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./imgs/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./imgs/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./imgs/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./imgs/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./imgs/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="./imgs/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./imgs/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="./imgs/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="./imgs/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="./imgs/manifest.json">
+  <link rel="shortcut icon" href="./imgs/favicon.ico">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-TileImage" content="./imgs/mstile-144x144.png">
+  <meta name="msapplication-config" content="./imgs/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>_Paul Etscheit</title>
+</head>
+<body>
+
+	<header>
+
+		<h2><a href="../index.html">_Paul Etscheit</a></h2>
+		<nav>
+			<ul>
+				<li><a href="./projects/">Projects</a></li>
+				<li><a href="./about-me/">About me</a></li>
+				<li><a href="./blog-template.html">Blog</a></li>
+				<li><a href="./contact/">Contact</a></li>
+				<li><a href="./resume/">Resume</a></li>
+			</ul>    
+		</nav>
+	</header>
+
+
+	<article>
+		<h2>Explaining Ruby Classes</h2>
+		<p>
+      		A big part of this week's challenges was about classes in Ruby. The nicest analogy I found describing classes was "A class is like a blueprint of a house. Once you've made is you can use it over and over again". Essentially we make classes for code we have to use over and over again and since we are lazy and want to keep our code DRY (don't repeat yourself) we use classes. In this post we'll be building a small tool to explain the concept of classes.
+      	</p>
+      	<p>
+      		Defining a class is very simple! We'll call our class FamilyMembers. By convention you don't seperate the class name with an underscore like we do for methods but like this: 
+		</p>
+		<p class="code_snippet">      			
+			 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">FamilyMembers</span>
+			 </pre></div>
+		</p>
+		<p>
+             Very easy right? Let's add some functionality. Our tool is simply going to tell us how old certain family member is and what his/her name is. It's a useless tool but should be a good example. 
+    	</p>
+    	<p class="code_snippet">
+	       <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">FamilyMemebers</span>
+
+			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">initialize</span>(<span style="color: #007020">name</span>, age)
+			<span style="color: #3333BB">@name</span> <span style="color: #333333">=</span> <span style="color: #007020">name</span>
+			<span style="color: #3333BB">@age</span> <span style="color: #333333">=</span> age
+			<span style="color: #008800; font-weight: bold">end</span>
+
+			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">name</span>
+			<span style="color: #3333BB">@name</span>
+			<span style="color: #008800; font-weight: bold">end</span>
+
+			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">set_name</span>(<span style="color: #007020">name</span>)
+			<span style="color: #3333BB">@name</span> <span style="color: #333333">=</span> <span style="color: #007020">name</span>
+			<span style="color: #008800; font-weight: bold">end</span>
+
+			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">age</span>
+			<span style="color: #3333BB">@age</span>
+			<span style="color: #008800; font-weight: bold">end</span>
+
+			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">set_age</span>(age)
+			<span style="color: #3333BB">@age</span> <span style="color: #333333">=</span> age
+			<span style="color: #008800; font-weight: bold">end</span>
+
+			<span style="color: #008800; font-weight: bold">end</span>
+			</pre></div>
+
+
+		 </p>
+        <p>
+	        This is going to look a tiny bit confusing at first. I'll explain everything now starting at the top. The initialize method I defined first is a special method in Ruby that will be run automatically when a class is called. As soon as FamilyMembers get called the initialize method is executed. Well the next question is what this method is actually doing. It's quite simple actually. The initialize method creates "instance variables" and like the name suggests they are variables used in instances of a class. The "@" sign assigns instance variables and they can be accessed throughout and entire class. What we're doing in the first method is creating a variable that can be used in the entire class, at least if it's ran as in instance but we'll get to that later.
+		</p>
+		<p>
+	        The other four methods are quite simple as they either return a variable or assign a new value to one of the instance variables. 
+		</p>
+		<p>
+			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">FamilyMemebers</span>
+
+			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">name</span>
+			<span style="color: #3333BB">@name</span> <span style="color: #888888"># returns @name variable value</span>
+			<span style="color: #008800; font-weight: bold">end</span>
+
+			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">set_name</span>(<span style="color: #007020">name</span>)
+			<span style="color: #3333BB">@name</span> <span style="color: #333333">=</span> <span style="color: #007020">name</span> <span style="color: #888888"># assigns new value to @name when called with argument</span>
+			<span style="color: #008800; font-weight: bold">end</span>
+
+			<span style="color: #008800; font-weight: bold">end</span>
+			</pre></div>
+ 		</p>
+ 		<p>
+ 			Now this seems boring and useless but now we shall start using the class magic. Remember I was talking about instances of a class? That exactly what we'll be doing now! When we want to call an instance of a method we do it like this:
+ 		</p>
+ 		<p>
+ 			<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">new_instance <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">FamiliyMembers</span><span style="color: #333333">.</span>new(<span style="background-color: #fff0f0">&quot;Hans&quot;</span>, <span style="color: #0000DD; font-weight: bold">37</span>)
+			<span style="color: #888888"># this creates a new instance of the the FamiliyMembers class with the arguments </span>
+			<span style="color: #888888"># passed (&quot;Hans&quot;, 37)</span>
+			</pre></div>
+		</p>
+		<p>
+			Now we can call the methods defined in the class like this: 
+		</p>
+		<p>
+			<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">new_instance<span style="color: #333333">.</span>name
+			<span style="color: #888888"># Will return the value assigned to @name</span>
+
+			<span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Hans&quot;</span>
+
+			new_instance<span style="color: #333333">.</span>age
+
+			<span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">37</span>
+			</pre></div>
+		</p>
+		<p>
+			Changing a value now works just the same way! I bet you could do it yourself now!
+		</p>
+		<p>
+			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">new_instance<span style="color: #333333">.</span>set_name(<span style="background-color: #fff0f0">&quot;Frank&quot;</span>)
+
+			new_instance<span style="color: #333333">.</span>name
+
+			<span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Frank&quot;</span>
+			</pre></div>
+		</p>
+		<p>
+			So that should be all for today! We could assign new names and ages all day long if we wanted. Using a class we minimized the amount of code we have which is always a great thing! Hope it all makes sense to you!
+		</p>
+	</article>
+
+	<footer>
+		<ul>
+			<li><a href="https://www.facebook.com/paul.etscheit"><img class="float" src="../imgs/fb-logo-white.png" alt="facebook-logo"></a></li>
+			<li><a href="https://www.twitter.com/cryptosnoop"><img class="float" src="../imgs/twitter-logo-white.png" alt="twitter-logo"></a></li>
+			<li><a href="https://linkedin.com/pub/paul-etscheit/103/959/aa6"><img class="float" src="../imgs/linkedin-logo-white.png" alt="linkedin-logo"></a></li>
+			<li><a href="https://www.github.com/petscheit"><img class="float" src="../imgs/github-logo-white.png" alt="github-logo"></a></li>
+		</ul>
+	</footer>
+
+
+</body>
+</html>
