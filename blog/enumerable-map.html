@@ -50,23 +50,11 @@
       	<p>
       		Something important to know about the .map method is that it's also called ".collect". No idea why but it seems worth mentioning. So how is .map similar to .each? Well we use both of them to iterate over an array and at first sight they seem to do the same thing. Both of them iterate over every element of an array seperatly. Here and example:
 		</p>
-		<p> 
-			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">irb(main)<span style="color: #AA6600">:&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">].</span>each {<span style="color: #333333">|</span>x<span style="color: #333333">|</span> x<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">2</span>}
-			<span style="color: #333333">=&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>, <span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">]</span>
-			</pre></div>
-
-
-		</p>
+		<script src="https://gist.github.com/petscheit/9bcee791b3f33c574624.js"></script>
 		<p>
              Ok so by default .each returns the original array. Let's take a look at what happens when we use .map!
     	</p>
-    	<p>
-	        <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">irb(main)<span style="color: #AA6600">:&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">1</span>,<span style="color: #0000DD; font-weight: bold">2</span>,<span style="color: #0000DD; font-weight: bold">3</span><span style="color: #333333">].</span>collect {<span style="color: #333333">|</span>x<span style="color: #333333">|</span> x<span style="color: #333333">*</span><span style="color: #0000DD; font-weight: bold">2</span>}
-			<span style="color: #333333">=&gt;</span> <span style="color: #333333">[</span><span style="color: #0000DD; font-weight: bold">2</span>, <span style="color: #0000DD; font-weight: bold">4</span>, <span style="color: #0000DD; font-weight: bold">6</span><span style="color: #333333">]</span>
-			</pre></div>
-
-
-        </p>
+    	<script src="https://gist.github.com/petscheit/52be4b21a077c4f347b4.js"></script>
         <p>
 	       Ahhhh. That's quite interesting and shows us the fundamental differences of these methods. .map reads the array, iterates through it and then returns the new array while .each returns the original one. So why is this important? As far as I have understood the only real benefit is less code which results in better readability and efficiency. I mean the difference of using one or the other is minimal at this stage but I guess these benefits become more important as we dig deeper in the coding world. Hope you understand what I'm trying to explain. Have a good day :)
 		</p>

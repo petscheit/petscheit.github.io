@@ -50,42 +50,11 @@
       	<p>
       		Defining a class is very simple! We'll call our class FamilyMembers. By convention you don't seperate the class name with an underscore like we do for methods but like this: 
 		</p>
-		<p class="code_snippet">      			
-			 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">FamilyMembers</span>
-			 </pre></div>
-		</p>
+		<script src="https://gist.github.com/petscheit/a72c4bb8a249a7ff0c4e.js"></script>
 		<p>
              Very easy right? Let's add some functionality. Our tool is simply going to tell us how old certain family member is and what his/her name is. It's a useless tool but should be a good example. 
     	</p>
-    	<p class="code_snippet">
-	       <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">FamilyMemebers</span>
-
-			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">initialize</span>(<span style="color: #007020">name</span>, age)
-			<span style="color: #3333BB">@name</span> <span style="color: #333333">=</span> <span style="color: #007020">name</span>
-			<span style="color: #3333BB">@age</span> <span style="color: #333333">=</span> age
-			<span style="color: #008800; font-weight: bold">end</span>
-
-			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">name</span>
-			<span style="color: #3333BB">@name</span>
-			<span style="color: #008800; font-weight: bold">end</span>
-
-			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">set_name</span>(<span style="color: #007020">name</span>)
-			<span style="color: #3333BB">@name</span> <span style="color: #333333">=</span> <span style="color: #007020">name</span>
-			<span style="color: #008800; font-weight: bold">end</span>
-
-			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">age</span>
-			<span style="color: #3333BB">@age</span>
-			<span style="color: #008800; font-weight: bold">end</span>
-
-			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">set_age</span>(age)
-			<span style="color: #3333BB">@age</span> <span style="color: #333333">=</span> age
-			<span style="color: #008800; font-weight: bold">end</span>
-
-			<span style="color: #008800; font-weight: bold">end</span>
-			</pre></div>
-
-
-		 </p>
+    	<script src="https://gist.github.com/petscheit/78e81b904cd660a19c83.js"></script>
         <p>
 	        This is going to look a tiny bit confusing at first. I'll explain everything now starting at the top. The initialize method I defined first is a special method in Ruby that will be run automatically when a class is called. As soon as FamilyMembers get called the initialize method is executed. Well the next question is what this method is actually doing. It's quite simple actually. The initialize method creates "instance variables" and like the name suggests they are variables used in instances of a class. The "@" sign assigns instance variables and they can be accessed throughout and entire class. What we're doing in the first method is creating a variable that can be used in the entire class, at least if it's ran as in instance but we'll get to that later.
 		</p>
@@ -93,53 +62,20 @@
 	        The other four methods are quite simple as they either return a variable or assign a new value to one of the instance variables. 
 		</p>
 		<p>
-			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">FamilyMemebers</span>
-
-			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">name</span>
-			<span style="color: #3333BB">@name</span> <span style="color: #888888"># returns @name variable value</span>
-			<span style="color: #008800; font-weight: bold">end</span>
-
-			<span style="color: #008800; font-weight: bold">def</span> <span style="color: #0066BB; font-weight: bold">set_name</span>(<span style="color: #007020">name</span>)
-			<span style="color: #3333BB">@name</span> <span style="color: #333333">=</span> <span style="color: #007020">name</span> <span style="color: #888888"># assigns new value to @name when called with argument</span>
-			<span style="color: #008800; font-weight: bold">end</span>
-
-			<span style="color: #008800; font-weight: bold">end</span>
-			</pre></div>
+			<script src="https://gist.github.com/petscheit/83fcfbce055a809d8999.js"></script>
  		</p>
  		<p>
  			Now this seems boring and useless but now we shall start using the class magic. Remember I was talking about instances of a class? That exactly what we'll be doing now! When we want to call an instance of a method we do it like this:
  		</p>
- 		<p>
- 			<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">new_instance <span style="color: #333333">=</span> <span style="color: #003366; font-weight: bold">FamiliyMembers</span><span style="color: #333333">.</span>new(<span style="background-color: #fff0f0">&quot;Hans&quot;</span>, <span style="color: #0000DD; font-weight: bold">37</span>)
-			<span style="color: #888888"># this creates a new instance of the the FamiliyMembers class with the arguments </span>
-			<span style="color: #888888"># passed (&quot;Hans&quot;, 37)</span>
-			</pre></div>
-		</p>
+ 		<script src="https://gist.github.com/petscheit/8cb167d5bee715516101.js"></script>
 		<p>
 			Now we can call the methods defined in the class like this: 
 		</p>
-		<p>
-			<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">new_instance<span style="color: #333333">.</span>name
-			<span style="color: #888888"># Will return the value assigned to @name</span>
-
-			<span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Hans&quot;</span>
-
-			new_instance<span style="color: #333333">.</span>age
-
-			<span style="color: #333333">=&gt;</span> <span style="color: #0000DD; font-weight: bold">37</span>
-			</pre></div>
-		</p>
+		<script src="https://gist.github.com/petscheit/6190731fa0c48edd6ffc.js"></script>
 		<p>
 			Changing a value now works just the same way! I bet you could do it yourself now!
 		</p>
-		<p>
-			<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">new_instance<span style="color: #333333">.</span>set_name(<span style="background-color: #fff0f0">&quot;Frank&quot;</span>)
-
-			new_instance<span style="color: #333333">.</span>name
-
-			<span style="color: #333333">=&gt;</span> <span style="background-color: #fff0f0">&quot;Frank&quot;</span>
-			</pre></div>
-		</p>
+		<script src="https://gist.github.com/petscheit/0d9715a89a23cfae4623.js"></script>
 		<p>
 			So that should be all for today! We could assign new names and ages all day long if we wanted. Using a class we minimized the amount of code we have which is always a great thing! Hope it all makes sense to you!
 		</p>
