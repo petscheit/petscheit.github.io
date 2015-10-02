@@ -1,0 +1,92 @@
+#game-field {
+	position: relative;
+	width: 70%;
+	height: 500px;
+	background-color: grey;
+	top: 0px;
+}
+
+
+#start-button{
+	position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: 200px;
+    background-color: black;    
+}
+
+#start-button a {
+	font-size: 2em;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+
+#start-button a:hover {
+	font-size: 2.2em;
+}
+
+.game-mode-buttons{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+
+table tr td a {
+	text-decoration: none;
+	list-style-type: none;
+	color: black;
+}
+
+.game-mode-buttons tr td {
+	width: 25%;
+	background-color: lightgrey;
+	border: 2px solid white;
+	border-radius: 3px;
+}
+
+.credits {
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.credits tr td {
+	width: 50%;
+	background-color: orange;
+	font-size: 1.4em;
+}
+
+.field {
+	
+	width: 100%;
+	float: top;
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.field td {
+	text-align: center;
+	width: 33%;
+	font-size: 1.5em;
+
+}
+
+.field #result {
+	font-size: 14em;
+}
+
+.field #myGuess {
+	font-size: 14em;
+}
+
+.field #status {
+	font-size: 4em;
+}
+
+.field #gain {
+	font-size: 3em;
+}
+
