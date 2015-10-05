@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/game.css">
+   <script src="my_game.js"></script>
+</head>
+
+<body>
+	<div id="game-field">
+        <div id="start-button">
+            <a href="#" onclick="hide();startGame();"><p>Start Game!</p></a>
+        </div>
+
+		<table class="credits">
+			<tr>
+    			<td id="currentBet">Current Bet: 0</td>
+    			<td id="availableCredit">Available Credits: 2000</td>
+    		</tr>
+    	</table>
+
+    	<table class="field">
+    		<tr>
+    			<td>Number rolled:</td>
+    			<td id="status">/</td>
+    			<td id="myBetSmall">Your bet:</td>
+    		</tr>
+
+    		<tr>
+    			<td id="result">/</td>
+    			<td id="gain"></td>
+    			<td id="myGuess">/</td>
+    		</tr>
+    	</table>
+
+	    <table class="game-mode-buttons">
+			<tr>
+				<td id="black"><a href="#" onclick="playRound(1);"><p>Bet on Black</p></a></td> 
+				<td id="red"><a href="#" onclick="playRound(2);"><p>Bet on Red</p></a></td>
+				<td id="odd"><a href="#" onclick="playRound(3);"><p>Bet on an Even no.</p></a></td>
+				<td id="even"><a href="#" onclick="playRound(4);"><p>Bet on an ODD no.</p></a></td> 
+			</tr>
+					
+			<tr>
+				<td id="twenty"><a href="#" onclick="add(20);"><p>Place 20$</p></a></td>
+				<td id="ten"><a href="#" onclick="add(10);"><p>Place 10$</p></a></td>
+				<td id="five"><a href="#" onclick="add(5);"><p>Place 5$</p></a></td>
+				<td id="one"><a href="#" onclick="add(1);"><p>Place 1$</p></a></td>
+			</tr>	
+		</table>
+
+	</div>
+
+    <a href="https://github.com/petscheit/petscheit.github.io/blob/master/my_game.js"><p>CLICK ME FOR REFLECTION!!!</p></a>
+
+</body>
+</html>
