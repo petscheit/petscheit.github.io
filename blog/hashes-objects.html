@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" sizes="57x57" href="./imgs/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./imgs/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./imgs/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./imgs/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./imgs/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./imgs/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./imgs/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./imgs/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="./imgs/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./imgs/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="./imgs/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="./imgs/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="./imgs/manifest.json">
+  <link rel="shortcut icon" href="./imgs/favicon.ico">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-TileImage" content="./imgs/mstile-144x144.png">
+  <meta name="msapplication-config" content="./imgs/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>_Paul Etscheit</title>
+</head>
+<body>
+
+	<header>
+
+		<h2><a href="../index.html">_Paul Etscheit</a></h2>
+		<nav>
+			<ul>
+				<li><a href="../projects/index.html">Projects</a></li>
+				<li><a href="./about-me/">About me</a></li>
+				<li><a href="./blog-template.html">Blog</a></li>
+				<li><a href="./contact/">Contact</a></li>
+				<li><a href="./resume/">Resume</a></li>
+			</ul>    
+		</nav>
+	</header>
+
+
+	<article>
+		<h2>Hashes vs. Objects </h2>
+		<p>
+      		Well another week is over and here I am, slowly learning JavaScript. Week was quite alright, the reading in the beginning killed me. Today I'll be comparing Ruby hashes with JS (JavaScript) objects. It's important to know that hashes and objects are basically the same. We can store data with a key/value structure. This is how you create a hash: 
+      	</p>
+      	<script src="https://gist.github.com/petscheit/caecc67eef88cd2e3c37.js"></script>
+      	<p>
+      		This how you create a JavaScript object:      		
+		</p>
+		<script src="https://gist.github.com/petscheit/819e4a2bfdd29768e18d.js"></script>
+		<p>      			
+			Pretty similar right? Ok lets take a look at how we add elements to a hash:
+		</p>
+		<script src="https://gist.github.com/petscheit/69b15a83e720f0710b11.js"></script>
+		<p>
+             And this is how we add an element to an object: 
+    	</p>
+    	<script src="https://gist.github.com/petscheit/9f6658450ec23a6b86f6.js"></script>
+    	<p>
+	        Now these are slightly different and I must say that I prefer the way it's done in JS. It's a tiny bit shorter and faster to type, on the downside way it's done in ruby looks clearer. Let's take a look at how we can access a hash:
+        </p>
+        <script src="https://gist.github.com/petscheit/506ea9aed90dc2aea1c0.js"></script>
+        <p>
+	        And this is how we access an object:
+		</p>
+		<script src="https://gist.github.com/petscheit/b3f6815187999363efc7.js"></script>
+		<p>
+	        The last thing we're going to look at is deleting elements. This is how you delete an element from a hash. It's important to know that Ruby will return the value of the deleted element. 
+		</p>
+		<script src="https://gist.github.com/petscheit/24f158173d6d8883b3e3.js"></script>
+		<p>
+			Aaaaannd the object again!
+ 		</p>
+ 		<script src="https://gist.github.com/petscheit/bd3c3ccd6804d15f4a48.js"></script>
+ 		<p>
+ 			As you can see things work very similar. I actually prefer working with JS objects now as thing are shorter and easier to type. While creating objects is a tiny bit harder then creating a hash adding and accessing objects is simpler. 
+ 		</p>
+
+	</article>
+
+	<footer>
+		<ul>
+			<li><a href="https://www.facebook.com/paul.etscheit"><img class="float" src="../imgs/fb-logo-white.png" alt="facebook-logo"></a></li>
+			<li><a href="https://www.twitter.com/cryptosnoop"><img class="float" src="../imgs/twitter-logo-white.png" alt="twitter-logo"></a></li>
+			<li><a href="https://linkedin.com/pub/paul-etscheit/103/959/aa6"><img class="float" src="../imgs/linkedin-logo-white.png" alt="linkedin-logo"></a></li>
+			<li><a href="https://www.github.com/petscheit"><img class="float" src="../imgs/github-logo-white.png" alt="github-logo"></a></li>
+		</ul>
+	</footer>
+
+
+</body>
+</html>
