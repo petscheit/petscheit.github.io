@@ -142,7 +142,7 @@ var NUMBERS = {1: [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 3
 //a lot harder but I couldn't figure it out and used this instead. 
 
 function startGame() {
-	totalCredit = 2000
+	totalCredit = 2000000
 	betCredit = 0
 }
 
