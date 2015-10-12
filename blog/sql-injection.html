@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" sizes="57x57" href="./imgs/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./imgs/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./imgs/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./imgs/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./imgs/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./imgs/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./imgs/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./imgs/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="./imgs/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./imgs/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="./imgs/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="./imgs/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="./imgs/manifest.json">
+  <link rel="shortcut icon" href="./imgs/favicon.ico">
+  <meta name="msapplication-TileColor" content="#b91d47">
+  <meta name="msapplication-TileImage" content="./imgs/mstile-144x144.png">
+  <meta name="msapplication-config" content="./imgs/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>_Paul Etscheit</title>
+</head>
+<body>
+
+	<header>
+
+		<h2><a href="../index.html">_Paul Etscheit</a></h2>
+		<nav>
+			<ul>
+				<li><a href="../projects/index.html">Projects</a></li>
+				<li><a href="./about-me/">About me</a></li>
+				<li><a href="./blog-template.html">Blog</a></li>
+				<li><a href="./contact/">Contact</a></li>
+				<li><a href="./resume/">Resume</a></li>
+			</ul>    
+		</nav>
+	</header>
+
+
+	<article>
+		<h2>SQL Injection</h2>
+		<p>
+      		SQQL injections are a very common kind of cyber attacks. Their aim is to gain full access into a websites/companies database. Once a hacker has full access to a database he can do what ever he wants, copy files, modify dataa and even delete the entire thing. Most big data thefts we hear about in the news quite frequently are SQL injections. So what exactly is a SQL injection and how do they work?
+      	</p>
+      	<p>
+      		First we shall take a look at how SQL works and what it is. SQL is the language we use to communitcate with a database (a database containsone or more tables). The tables work just like an excel table. Basically every website uses a database of some sort to store data like login information. Let's take a look at how SQL looks. In this example we'll be grabbing all data from a table called "users"
+		</p>
+		https://gist.github.com/petscheit/2b4d3c95c12e17a810be
+		<p>      			
+			 The star is used to grab all rows from the table. The rest of the code should make sense :) We can also use SQL to add new data. 
+		</p>
+		<script src="https://gist.github.com/petscheit/88a5f36a0fbd07aa5437.js"></script>
+		<p>
+             This will add a new customer to the database, where it will be saved. Imagine your average login screen. When you type your username and password the website treats your entries as a string -> nothing can really happen. But now imagine you're able to pass actual code through the login screen that is interpreted by SQL and then executed. Essentially that's how an SQL injection works. 
+    	</p>
+	        
+        <p>
+	        So how does that work? How can we trick a website into interpreting our input not as a string? Well there are a lot of different approaches but the standart procedure is to test how a database handles "bad inputs". One can test that by adding a quotes into the username (e.g. 'name@email.com''). Playing around will show how the database works and where it might have weaknesses. Once we've figured out how we can pass code that is not recogized as a string anymore the doors are basically open. It's quite scary how simple this is in theory and how often it happens to huge corperations
+		</p>
+		
+	</article>
+
+	<footer>
+		<ul>
+			<li><a href="https://www.facebook.com/paul.etscheit"><img class="float" src="../imgs/fb-logo-white.png" alt="facebook-logo"></a></li>
+			<li><a href="https://www.twitter.com/cryptosnoop"><img class="float" src="../imgs/twitter-logo-white.png" alt="twitter-logo"></a></li>
+			<li><a href="https://linkedin.com/pub/paul-etscheit/103/959/aa6"><img class="float" src="../imgs/linkedin-logo-white.png" alt="linkedin-logo"></a></li>
+			<li><a href="https://www.github.com/petscheit"><img class="float" src="../imgs/github-logo-white.png" alt="github-logo"></a></li>
+		</ul>
+	</footer>
+
+
+</body>
+</html>
